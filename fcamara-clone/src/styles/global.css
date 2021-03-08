@@ -23,22 +23,28 @@ header{
 .logo img{
   width: 8rem;
   margin-right: 3rem;
+  cursor: pointer;
 }
-a{
+header a{
   margin-right: 2rem;
   text-decoration: none;
   color: #000;
   letter-spacing: 1px;
+  cursor: pointer;
 }
-a:nth-child(9){
+header a:nth-child(9), header a:nth-child(10){
+  color: #FE4400;
+  margin-right: 0.3rem;
+}
+header a:hover{
   color: #FE4400;
 }
-a:hover{
-  color: #FE4400;
+header a span{
+  cursor: auto;
 }
 
 /*Nav Social*/
-nav{
+.navSocial{
   display: flex;
   flex-direction: column;
   width: 0;
@@ -47,21 +53,22 @@ nav{
   top: 200px;
   left: 15px;
 }
-nav a{
+.navSocial a{
   padding-bottom: 15px;
+  color: #FE4400;
 }
 
 /*Conteudo intro*/
 .logoIntro{
-  position: relative;
+  position: absolute;
   width: 30rem;
-  right: 140px;
+  left: 26.5rem;
+  top: 4rem;
 }
 .sec{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 8rem;
   width: 100%;
   position: absolute;
 }
@@ -69,45 +76,47 @@ nav a{
   position: absolute;
   font-size: 16px;
   letter-spacing: 2px;
-  bottom: 17rem;
   left: 60rem;
+  top: 7.3rem;
 }
 .sec h1{
   position: absolute;
   color: #FE4400;
-  bottom: 9.5rem;
   left: 60rem;
   font-size: 42px;
   font-weight: 600;
+  top: 9rem;
 }
 .sec p{
   position: absolute;
   font-size: 16px;
   letter-spacing: 2px;
-  bottom: 6.5rem;
   left: 60rem;
+  top: 16rem;
 }
 .btnOrange{
-  position: relative;
+  position: absolute;
   background-color: #FE4400;
   color: #FFF;
   padding: 20px 80px;
-  left: -5px;
   font-size: 15px;
   font-weight: 600;
-  top: 120px;
   border-radius: 10px;
+  right: 32.3rem;
+  top: 19.5rem;
   border: none;
+  cursor: pointer;
 }
 .btnDown{
-  position: relative;
-  left: 420px;
-  top: 280px;
+  position: absolute;
   background-color: #4B4FA1;
   color: #FFF;
   border-radius: 50%;
   border: none;
   padding: 1rem;
+  cursor: pointer;
+  right: 5rem;
+  top: 33rem;
 }
 
 /*HomeParceiros*/
@@ -120,7 +129,7 @@ nav a{
   width: 100%;
   top: 43rem;
   padding-top: 40px;
-  height: 30vh;
+  height: 32vh;
 }
 .conteudo p, .conteudo h1{
   display: flex;
@@ -144,19 +153,19 @@ nav a{
   color: #39393B;
 }
 .circles span:nth-child(1){
-  bottom: 16rem;
+  bottom: 17.5rem;
 }
 .circles span:nth-child(2){
-  bottom: 14.5rem;
+  bottom: 16rem;
 }
 .circles span:nth-child(3){
-  bottom: 13rem;
+  bottom: 14.5rem;
 }
 .circles span:nth-child(4){
-  bottom: 11.5rem;
+  bottom: 13rem;
 }
 .circles span:nth-child(5){
-  bottom: 10rem;
+  bottom: 11.5rem;
 }
 .circlesSmall span{
   position: absolute;
@@ -164,13 +173,40 @@ nav a{
   color: #39393B;
 }
 .circlesSmall span:nth-child(1){
-  bottom: 10rem;
+  bottom: 11.5rem;
   left: 8rem;
 }
 .circlesSmall span:nth-child(2){
-  bottom: 8.5rem;
+  bottom: 10rem;
   left: 8rem;
 }
 .circlesSmall span:nth-child(3){
+  bottom: 2rem;
   left: 5rem;
+}
+.empresas{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 3rem;
+}
+.empresasRow{
+  display: inline;
+  font-size: 2rem;
+}
+.empresasLogo{
+  width: 6rem;
+  height: 2rem;
+  margin-left: 4rem;
+  position: relative;
+  right: 2rem;
+}
+.movieRowLeft{
+  position: relative;
+  left: 27rem;
+}
+.movieRowRight{
+  position: relative;
+  right: 27rem;
 }
