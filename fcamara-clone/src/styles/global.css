@@ -44,7 +44,9 @@ section{
   position: absolute;
 }
 .logoIntro{
+  position: relative;
   width: 30rem;
+  right: 140px;
 }
 .titleIntro{
   position: absolute;
@@ -56,8 +58,37 @@ section{
 .titleOrange{
   position: absolute;
   color: #FF4500;
-  bottom: 10rem;
+  bottom: 9.5rem;
   left: 60rem;
   font-size: 42px;
   font-weight: 600;
+}
+.txtTitle{
+  position: absolute;
+  font-size: 16px;
+  letter-spacing: 2px;
+  bottom: 6.5rem;
+  left: 60rem;
+}
+.btnOrange{
+  position: relative;
+  background-color: #fa5c23;
+  color: #FFF;
+  padding: 20px 80px;
+  left: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  top: 110px;
+  border-radius: 10px;
+  border: none;
+}
+.btnDown{
+  position: relative;
+  left: 420px;
+  top: 280px;
+  background-color: #250597;
+  color: #FFF;
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
 }

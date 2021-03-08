@@ -1,3 +1,6 @@
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
+
 export function HeaderMenu(){
   return(
     <div>
@@ -16,9 +19,9 @@ export function HeaderMenu(){
         <img src="https://www.fcamara.com.br/images/home/home-intro.png" alt="logoIntro" className="logoIntro"/>
         <h3 className="titleIntro">INOVAÇÃO E TECNOLOGIA PARA PROMOVER</h3>
         <h1 className="titleOrange">Transformação cultural,<br /> digital e cognitiva</h1>
-        <p>em organizações que buscam resultados<br /> tangíveis e escaláveis</p>
-        <button>FALE COM NOSSOS ESPECIALISTAS</button>
-        <button>down</button>
+        <p className="txtTitle">em organizações que buscam resultados<br /> tangíveis e escaláveis</p>
+        <button className="btnOrange">FALE COM NOSSOS ESPECIALISTAS <ArrowRightAltIcon style={{width: "50px", top:"15px", position: "absolute"}} /></button>
+        <button className="btnDown"><ArrowDownwardIcon/></button>
       </section>
     </div>
   );
