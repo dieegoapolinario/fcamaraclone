@@ -4,14 +4,16 @@
   box-sizing: border-box;
 }
 body{
-  background: #F2F3F5;
+  background: #FFF;
 }
 .container{
   height: 100vh;
   margin: 0 auto;
   padding-top: 2rem;
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Ubuntu', sans-serif;
 }
+
+/*HomeIntro*/
 /*Header-nav*/
 header{
   display: flex;
@@ -29,13 +31,33 @@ a{
   letter-spacing: 1px;
 }
 a:nth-child(9){
-  color: #FF4500;
+  color: #FE4400;
 }
 a:hover{
-  color: #FF4500;
+  color: #FE4400;
 }
+
+/*Nav Social*/
+nav{
+  display: flex;
+  flex-direction: column;
+  width: 0;
+  height: 0;
+  position: relative;
+  top: 200px;
+  left: 15px;
+}
+nav a{
+  padding-bottom: 15px;
+}
+
 /*Conteudo intro*/
-section{
+.logoIntro{
+  position: relative;
+  width: 30rem;
+  right: 140px;
+}
+.sec{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,27 +65,22 @@ section{
   width: 100%;
   position: absolute;
 }
-.logoIntro{
-  position: relative;
-  width: 30rem;
-  right: 140px;
-}
-.titleIntro{
+.sec h3{
   position: absolute;
   font-size: 16px;
   letter-spacing: 2px;
   bottom: 17rem;
   left: 60rem;
 }
-.titleOrange{
+.sec h1{
   position: absolute;
-  color: #FF4500;
+  color: #FE4400;
   bottom: 9.5rem;
   left: 60rem;
   font-size: 42px;
   font-weight: 600;
 }
-.txtTitle{
+.sec p{
   position: absolute;
   font-size: 16px;
   letter-spacing: 2px;
@@ -72,13 +89,13 @@ section{
 }
 .btnOrange{
   position: relative;
-  background-color: #fa5c23;
+  background-color: #FE4400;
   color: #FFF;
   padding: 20px 80px;
-  left: 5px;
+  left: -5px;
   font-size: 15px;
   font-weight: 600;
-  top: 110px;
+  top: 120px;
   border-radius: 10px;
   border: none;
 }
@@ -86,9 +103,74 @@ section{
   position: relative;
   left: 420px;
   top: 280px;
-  background-color: #250597;
+  background-color: #4B4FA1;
   color: #FFF;
   border-radius: 50%;
   border: none;
-  padding: 10px;
+  padding: 1rem;
+}
+
+/*HomeParceiros*/
+.containerParceiros{
+  background-color: #303033;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  top: 43rem;
+  padding-top: 40px;
+  height: 30vh;
+}
+.conteudo p, .conteudo h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  letter-spacing: 1px;
+}
+.conteudo p{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  bottom: 3rem;
+}
+.conteudo h1{
+  bottom: 3rem;
+}
+.circles span{
+  position: absolute;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  color: #39393B;
+}
+.circles span:nth-child(1){
+  bottom: 16rem;
+}
+.circles span:nth-child(2){
+  bottom: 14.5rem;
+}
+.circles span:nth-child(3){
+  bottom: 13rem;
+}
+.circles span:nth-child(4){
+  bottom: 11.5rem;
+}
+.circles span:nth-child(5){
+  bottom: 10rem;
+}
+.circlesSmall span{
+  position: absolute;
+  font-size: 5rem;
+  color: #39393B;
+}
+.circlesSmall span:nth-child(1){
+  bottom: 10rem;
+  left: 8rem;
+}
+.circlesSmall span:nth-child(2){
+  bottom: 8.5rem;
+  left: 8rem;
+}
+.circlesSmall span:nth-child(3){
+  left: 5rem;
 }

@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
-import { HeaderMenu } from "../components/HomeIntro";
+import { HomeIntro } from "../components/HomeIntro";
+import { HomeParceiros } from "../components/HomeParceiros";
 
 export default function Home() {
   return (
@@ -10,7 +11,9 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu:wght@500&display=swap" rel="stylesheet"></link>
       </Head>
 
-      <HeaderMenu />
+      <HomeIntro />
+      
+      <HomeParceiros />
     </div>
   )
 }
