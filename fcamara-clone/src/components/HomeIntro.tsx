@@ -6,11 +6,13 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 
+import styles from '../styles/components/HomeIntro.module.css';
+
 export function HomeIntro(){
   return(
-    <div>
-      <header>
-          <a href="#" className="logo"><img src="https://blog.fcamara.com.br/wp-content/uploads/2019/10/Logotipo-FCamara.png" alt="logo-fcamara" /></a>
+    <div className={styles.container}>
+      <header className={styles.header}>
+          <a href="#" className={styles.logo}><img src="https://blog.fcamara.com.br/wp-content/uploads/2019/10/Logotipo-FCamara.png" alt="logo-fcamara" /></a>
           <a href="#"><strong>quem somos</strong></a>
           <a href="#"><strong>serviços</strong></a>
           <a href="#"><strong>cases</strong></a>
@@ -21,7 +23,7 @@ export function HomeIntro(){
           <a href="#"><strong>PT<span> / </span></strong></a>
           <a href="#"><strong>EN</strong></a>
       </header>
-      <div className="navSocial">
+      <div className={styles.navSocial}>
         <a href="https://www.facebook.com/grupo.fcamara/">
           <FacebookIcon />
         </a>
@@ -35,13 +37,13 @@ export function HomeIntro(){
           <YouTubeIcon />
         </a>
       </div>
-      <section className="sec">
-        <img src="https://www.fcamara.com.br/images/home/home-intro.png" alt="logoIntro" className="logoIntro"/>
+      <section className={styles.sec}>
+        <img src="https://www.fcamara.com.br/images/home/home-intro.png" alt="logoIntro" className={styles.logoIntro}/>
         <h3>INOVAÇÃO E TECNOLOGIA PARA PROMOVER</h3>
         <h1>Transformação cultural,<br /> digital e cognitiva</h1>
         <p>em organizações que buscam resultados<br /> tangíveis e escaláveis</p>
-        <button className="btnOrange">FALE COM NOSSOS ESPECIALISTAS <ArrowRightAltIcon style={{width: "50px", top:"15px", position: "absolute"}} /></button>
-        <button className="btnDown"><ArrowDownwardIcon/></button>
+        <button className={styles.btnOrange}>FALE COM NOSSOS ESPECIALISTAS <ArrowRightAltIcon style={{width: "50px", top:"15px", position: "absolute"}} /></button>
+        <button className={styles.btnDown}><ArrowDownwardIcon/></button>
       </section>
     </div>
   );

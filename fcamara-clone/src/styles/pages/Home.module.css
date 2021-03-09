@@ -1,0 +1,12 @@
+.container{
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 2rem;
+  
+  display: grid;
+  grid-template-areas: 1fr;
+  gap: 60rem;
+}
+.container section{
+    
+}
