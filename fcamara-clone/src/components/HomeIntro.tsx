@@ -37,14 +37,18 @@ export function HomeIntro(){
           <YouTubeIcon />
         </a>
       </div>
+      <div className={styles.logoIntro}>
+        <img src="https://www.fcamara.com.br/images/home/home-intro.png" alt="logoIntro"/>
+      </div>
       <section className={styles.sec}>
-        <img src="https://www.fcamara.com.br/images/home/home-intro.png" alt="logoIntro" className={styles.logoIntro}/>
         <h3>INOVAÇÃO E TECNOLOGIA PARA PROMOVER</h3>
         <h1>Transformação cultural,<br /> digital e cognitiva</h1>
         <p>em organizações que buscam resultados<br /> tangíveis e escaláveis</p>
-        <button className={styles.btnOrange}>FALE COM NOSSOS ESPECIALISTAS <ArrowRightAltIcon style={{width: "50px", top:"15px", position: "absolute"}} /></button>
-        <button className={styles.btnDown}><ArrowDownwardIcon/></button>
+        <button className={styles.btnOrange}>FALE COM NOSSOS ESPECIALISTAS <ArrowRightAltIcon style={{width: "30px", marginBottom: "-7px"}} /></button>
       </section>
+      <div className={styles.btnDown}>
+        <button><ArrowDownwardIcon/></button>
+      </div>
     </div>
   );
 }
