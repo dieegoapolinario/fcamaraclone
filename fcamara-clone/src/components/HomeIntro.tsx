@@ -1,6 +1,9 @@
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 
+import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -48,6 +51,28 @@ export function HomeIntro(){
       </section>
       <div className={styles.btnDown}>
         <button><ArrowDownwardIcon/></button>
+      </div>
+
+
+      <div className={styles.containerParceiros}>
+        <div className={styles.conteudo}>
+          <p>NOSSOS CASES</p>
+          <h1>Somos parceiros das melhores empresas</h1>
+        </div>
+        <div className={styles.circles}>
+          <span>....</span>
+          <span>....</span>
+          <span>....</span>
+          <span>....</span>
+          <span>....</span>
+        </div>
+        <div className={styles.circlesSmall}>
+          <span>..</span>
+          <span>..</span>
+        </div>
+        <div className={styles.circlesX}>
+          <span>X</span>
+        </div>
       </div>
     </div>
   );

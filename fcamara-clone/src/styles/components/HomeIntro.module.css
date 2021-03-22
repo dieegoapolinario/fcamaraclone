@@ -1,17 +1,16 @@
 .container{
   display: grid;
   background-color: #FFF;
-  grid-template-columns: 10% 35% 40%;
-  grid-template-rows: 10% 70%;
+  grid-template-columns: 8rem 35rem 35rem;
+  grid-template-rows: 5rem 33rem 20rem;
 }
 .logo img{
   width: 8rem;
-  margin-right: 3rem;
+  margin-right: 2rem;
   cursor: pointer;
 }
 .header{
   grid-column: 1 / 5;
-  grid-row: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,17 +46,18 @@
 }
 .logoIntro{
   grid-column: 2;
+  grid-row: 2;
 }
 .logoIntro img{
   width: 35rem;
-  margin-top: 6rem;
-  margin-left: 14rem;
+  margin-top: 3rem;
+  
 }
 .sec{
   grid-column: 3;
   grid-row: 2;
-  margin-top: 10rem;
-  margin-left: 8rem;
+  margin-top: 7rem;
+  margin-left: 4rem;
 }
 .sec h3, .sec h1, .sec p, .sec .btnOrange{
   padding-bottom: 1.6rem;
@@ -99,10 +99,53 @@
   border: none;
   padding: 0.8rem;
   cursor: pointer;
-  margin-top: 33rem;
-  margin-left: 7rem;
+  margin-top: 29rem;
+  margin-left: 2rem;
 }
-/*
 
-
-*/
+/*****Parceiros*****/
+.containerParceiros{
+  color: #FFF;
+  grid-column: 1 / 5;
+  background-color: #303033;
+}
+.conteudo p, .conteudo h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.circles span{
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  color: #39393B;
+  display: flex;
+  width: 6.5rem;
+  height: 2rem;
+}
+.circles span:nth-child(1){
+  margin-top: -10rem;
+}
+.circlesSmall span{
+  display: flex;
+  width: 6.5rem;
+  height: 2rem;
+  margin-left: 9rem;
+  font-size: 6rem;
+  color: #39393B;
+}
+.circlesSmall span:nth-child(1){
+  margin-top: -5rem;
+}
+.circlesX span{
+  display: flex;
+  width: 6.5rem;
+  height: 2rem;
+  margin-left: 4rem;
+  margin-top: 8rem;
+  font-size: 5rem;
+  color: #39393B;
+  font-weight: 600;
+}
