@@ -3,6 +3,7 @@ import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+import CheckIcon from '@material-ui/icons/Check';
 
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -53,7 +54,7 @@ export function HomeIntro(){
         <button><ArrowDownwardIcon/></button>
       </div>
 
-
+      {/*****PARCEIROS*****/}
       <div className={styles.containerParceiros}>
         <div className={styles.conteudo}>
           <p>NOSSOS CASES</p>
@@ -72,6 +73,46 @@ export function HomeIntro(){
         </div>
         <div className={styles.circlesX}>
           <span>X</span>
+        </div>
+        <div className={styles.empresas}>
+        <div className={styles.movieRowLeft}>
+          <NavigateBeforeIcon style={{fontSize: 70, color: "#FE4400"}} />
+        </div>
+        <div className={styles.empresasRow}>
+          <span><img className={styles.empresasLogo} src="https://www.fcamara.com.br/images/home/logos-clientes/logo-01.png" alt="Riachuelo"/></span>
+          <span><img className={styles.empresasLogo} src="https://www.fcamara.com.br/images/home/logos-clientes/logo-02.png" alt="ViaVarejo"/></span>
+          <span><img className={styles.empresasLogo} src="https://www.fcamara.com.br/images/home/logos-clientes/logo-03.png" alt="Walmart"/></span>
+          <span><img className={styles.empresasLogo} src="https://www.fcamara.com.br/images/home/logos-clientes/logo-04.png" alt="Dasa"/></span>
+          <span><img className={styles.empresasLogo} src="https://www.fcamara.com.br/images/home/logos-clientes/logo-05.png" alt="Linx"/></span>
+          <span><img className={styles.empresasLogo} src="https://www.fcamara.com.br/images/home/logos-clientes/logo-06.png" alt="Sodexo"/></span>
+          <span><img className={styles.empresasLogo} src="https://www.fcamara.com.br/images/home/logos-clientes/logo-07.png" alt="Movida"/></span>
+          <span><img className={styles.empresasLogo} src="https://www.fcamara.com.br/images/home/logos-clientes/logo-08.png" alt="Drogasil"/></span>
+        </div>
+        <div className={styles.movieRowRight}>
+          <NavigateNextIcon style={{fontSize: 70, color: "#FE4400"}} />
+        </div>
+      </div>
+      </div>
+      
+      {/*****SERVIÇOS*****/}
+      <div className={styles.containerServices}>
+        <div className={styles.servicesTitle}>
+          <p>SERVIÇOS</p>
+          <h1>Transformamos digitalmente seu negócio</h1>
+          <a href="#">business</a>
+          <a href="#">digital</a>
+          <a href="#">data</a>
+          <a href="#">cloud</a>
+          <a href="#">people</a>
+        </div>
+        <div className={styles.logoServices}>
+          <img src="https://www.fcamara.com.br/images/home/servicos-business.png" alt="logo-services"/>
+        </div>
+        <div className={styles.business}>
+          <h2>Business</h2>
+          <p><CheckIcon style={{color: "#FE4400"}} /> Consulting</p>
+          <p><CheckIcon style={{color: "#FE4400"}} /> Tech Due Diligence</p>
+          <p><CheckIcon style={{color: "#FE4400"}} /> Corporate Venture</p>
         </div>
       </div>
     </div>
